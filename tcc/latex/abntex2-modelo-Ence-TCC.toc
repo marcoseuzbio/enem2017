@@ -1,0 +1,32 @@
+\changetocdepth {4}
+\select@language {brazil}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {INTRODU\IeC {\c C}\IeC {\~A}O}}{13}{chapter.1}
+\contentsline {section}{\numberline {1.1}Delimita\IeC {\c c}\IeC {\~a}o do tema}{13}{section.1.1}
+\contentsline {section}{\numberline {1.2}Objetivos}{13}{section.1.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {REVIS\IeC {\~A}O BIBLIOGR\IeC {\'A}FICA}}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}Sobre hist\IeC {\'o}ria da educa\IeC {\c c}\IeC {\~a}o}{15}{section.2.1}
+\contentsline {section}{\numberline {2.2}O ENEM}{16}{section.2.2}
+\contentsline {section}{\numberline {2.3}Estudos sobre o ENEM}{17}{section.2.3}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {BASE DE DADOS}}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1}Descri\IeC {\c c}\IeC {\~a}o das fontes de dados}{19}{section.3.1}
+\contentsline {section}{\numberline {3.2}Tratamento das bases de dados}{19}{section.3.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {MODELAGEM ESTAT\IeC {\'I}STICA}}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}An\IeC {\'a}lise explorat\IeC {\'o}ria dos dados}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}Defini\IeC {\c c}\IeC {\~a}o do modelo proposto}{21}{section.4.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {METODOLOGIA}}{23}{chapter.5}
+\precistoctext {Referencial te\IeC {\'o}rico sobre os m\IeC {\'e}todos quantitativos aplicados.}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {AN\IeC {\'A}LISE DOS RESULTADOS}}{25}{chapter.6}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {CONCLUS\IeC {\~A}O}}{27}{chapter.7}
+\precistoctext {Coment\IeC {\'a}rios finais e trabalhos futuros.}

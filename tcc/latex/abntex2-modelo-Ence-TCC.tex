@@ -1,0 +1,373 @@
+%%%%%%%%%%%%%%%%% NÃO EDITAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt,openright,twoside,a4paper,chapter=TITLE,english,french,spanish,brazil]{abntex2}
+\usepackage{cmap}			
+\usepackage{lmodern}				
+\usepackage[T1]{fontenc}		
+\usepackage[utf8]{inputenc}	
+\usepackage{lastpage}			
+\usepackage{indentfirst}	
+\usepackage{color}				
+\usepackage{graphicx}			
+\usepackage{pacotence-capa-folhaprovacao}
+%\usepackage{lipsum}			
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite}
+
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% EDITAR AQUI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+titulo{Analise nas variáveis socioeconômicas o ENEM em 2017: que influenciam na aprovação dos candidatos inscritos} % O ALUNO DEVE EDITAR AQUI
+\autor{Marcos Antonio Euzebio de Oliveira}           % O ALUNO DEVE EDITAR AQUI
+\local{Rio de Janeiro}     % O ALUNO DEVE EDITAR AQUI
+\data{2019}										% O ALUNO DEVE EDITAR AQUI
+\orientador[Orientador(a):]{Alinne de Carvalho Veiga} % O ALUNO DEVE EDITAR AQUI
+\coorientador[Coorientador(a):]{Professor(a)} % O ALUNO DEVE EDITAR AQUI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NÃO EDITAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\instituicao{%
+  Instituto Brasileiro de Geografia e Estatística --- IBGE
+  \par
+  Escola Nacional de Ciências Estatísticas --- ENCE
+  \par
+  Bacharelado em Estatística}
+\tipotrabalho{Monografia}
+\preambulo{Monografia apresentada à Escola Nacional de Ciências Estatísticas do Instituto Brasileiro de Geografia e Estatística, como requisito parcial à obtenção do título de Bacharel em Estatística.}
+\definecolor{blue}{RGB}{41,5,195}
+\makeatletter
+\hypersetup{
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+		colorlinks=true,       		
+    	linkcolor=blue,          
+    	citecolor=blue,        	
+    	filecolor=magenta,      		
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+
+\makeatother
+
+\setlength{\parindent}{1.3cm}
+
+\setlength{\parskip}{0.2cm} 
+
+\makeindex
+
+\begin{document}
+%
+\frenchspacing 
+%
+\imprimircapa
+%
+\imprimirfolhaderosto*
+% ---
+% Inserir a ficha bibliografica
+% ---
+% Isto é um exemplo de Ficha Catalográfica, ou ``Dados internacionais de
+% catalogação-na-publicação''. Você pode utilizar este modelo como referência. 
+% Porém, provavelmente a biblioteca da sua universidade lhe fornecerá um PDF
+% com a ficha catalográfica definitiva após a defesa do trabalho. Quando estiver
+% com o documento, salve-o como PDF no diretório do seu projeto e substitua todo
+% o conteúdo de implementação deste arquivo pelo comando abaixo:
+%
+% \begin{fichacatalografica}
+%     \includepdf{fig_ficha_catalografica.pdf}
+% \end{fichacatalografica}
+
+%\begin{fichacatalografica}
+%	\vspace*{\fill}				
+%	\hrule							
+%	\begin{center}					
+%	\begin{minipage}[c]{12.5cm}		
+%	
+%	\imprimirautor
+%	l
+%	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
+%	\imprimirlocal, \imprimirdata-
+%	
+%	\hspace{0.5cm} \pageref{LastPage} p. : il. (algumas color.) ; 30 cm.\\
+%	
+%	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
+%	
+%	\hspace{0.5cm}
+%	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
+%	\imprimirdata.}\\
+%	
+%	\hspace{0.5cm}
+%		1. Palavra-chave1.
+%		2. Palavra-chave2.
+%		I. Orientador.
+%		II. Universidade xxx.
+%		III. Faculdade de xxx.
+%		IV. Título\\ 			
+%	
+%	\hspace{8.75cm} CDU 02:141:005.7\\
+%	
+%	\end{minipage}
+%	\end{center}
+%	\hrule
+%\end{fichacatalografica}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% O ALUNO DEVE EDITAR AQUI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{errata}
+%Elemento opcional da \citeonline[4.2.1.2]{NBR14724:2011}. Exemplo:
+%
+%\vspace{\onelineskip}
+%
+%FERRIGNO, C. R. A. \textbf{Tratamento de neoplasias ósseas apendiculares com
+%reimplantação de enxerto ósseo autólogo autoclavado associado ao plasma
+%rico em plaquetas}: estudo crítico na cirurgia de preservação de membro em
+%cães. 2011. 128 f. Tese (Livre-Docência) - Faculdade de Medicina Veterinária e
+%Zootecnia, Universidade de São Paulo, São Paulo, 2011.
+%
+%\begin{table}[htb]
+%\center
+%\footnotesize
+%\begin{tabular}{|p{1.4cm}|p{1cm}|p{3cm}|p{3cm}|}
+%  \hline
+%   \textbf{Folha} & \textbf{Linha}  & \textbf{Onde se lê}  & \textbf{Leia-se}  \\
+%    \hline
+%    1 & 10 & auto-conclavo & autoconclavo\\
+%   \hline
+%\end{tabular}
+%\end{table}
+%
+%\end{errata}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% O ALUNO DEVE EDITAR ONDE ESTAR MARCADO %%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{folhadeaprovacao}
+%
+%  \begin{center}
+%    {\ABNTEXchapterfont\large\imprimirautor}
+%
+%    \vspace*{\fill}\vspace*{\fill}
+%    {\ABNTEXchapterfont\bfseries\Large\imprimirtitulo}
+%    \vspace*{\fill}
+%		
+%    \hspace{.45\textwidth}
+%    \begin{flushleft}
+%        \imprimirpreambulo
+%   \end{flushleft}%
+%	\vspace*{\fill}
+%	
+%	\begin{flushleft}
+%	 Aprovada em 24 de dezembro de 2014.			% O ALUNO DEVE EDITAR AQUI
+%	   \end{flushleft}%
+%		
+%    \vspace*{\fill}
+%		 {\ABNTEXchapterfont\bfseries\large BANCA EXAMINADORA}
+%		\vspace*{\fill}
+%   \end{center}
+%    
+%   \assinatura{\textbf{\imprimirorientador} \\ Orientador(a) - SIGLA }   % O ALUNO DEVE EDITAR AQUI
+%   \assinatura{\textbf{\imprimircoorientador} \\ Coorientador(a) - SIGLA}  % O ALUNO DEVE EDITAR AQUI
+%   \assinatura{\textbf{Professor} \\ Convidado(a) - SIGLA}         % O ALUNO DEVE EDITAR AQUI
+%   %\assinatura{\textbf{Professor} \\ Convidado 3}
+%   %\assinatura{\textbf{Professor} \\ Convidado 4}
+%      
+%   \begin{center}
+%    \vspace*{0.5cm}
+%    {\imprimirlocal}
+%    \par
+%    {\imprimirdata}
+%    \vspace*{1cm}
+%  \end{center}
+%  
+%\end{folhadeaprovacao}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% O ALUNO DEVE EDITAR ONDE ESTAR MARCADO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{dedicatoria}
+%   \vspace*{\fill}
+%   \centering
+%   \noindent
+%   \textit{ Este trabalho é dedicado às crianças adultas que,\\   % O ALUNO DEVE EDITAR AQUI
+%   quando pequenas, sonharam em se tornar cientistas.} \vspace*{\fill}   % O ALUNO DEVE EDITAR AQUI
+%\end{dedicatoria}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ALUNO DEVE EDITAR AQUI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{agradecimentos}    % O ALUNO DEVE EDITAR AQUI
+%Os agradecimentos principais são direcionados à Gerald Weber, Miguel Frasson,
+%Leslie H. Watter, Bruno Parente Lima, Flávio de Vasconcellos Corrêa, Otavio Real
+%Salvador, Renato Machnievscz\footnote{Os nomes dos integrantes do primeiro
+%projeto abn\TeX\ foram extraídos de
+%\url{http://codigolivre.org.br/projects/abntex/}} e todos aqueles que
+%contribuíram para que a produção de trabalhos acadêmicos conforme
+%as normas ABNT com \LaTeX\ fosse possível.
+%
+%Agradecimentos especiais são direcionados ao Centro de Pesquisa em Arquitetura
+%da Informação\footnote{\url{http://www.cpai.unb.br/}} da Universidade de
+%Brasília (CPAI), ao grupo de usuários
+%\emph{latex-br}\footnote{\url{http://groups.google.com/group/latex-br}} e aos
+%novos voluntários do grupo
+%\emph{\abnTeX}\footnote{\url{http://groups.google.com/group/abntex2} e
+%\url{http://abntex2.googlecode.com/}}~que contribuíram e que ainda
+%contribuirão para a evolução do \abnTeX.
+%
+%\end{agradecimentos}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ALUNO DEVE EDITAR AQUI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{epigrafe}
+%    \vspace*{\fill}
+%	\begin{flushright}  % O ALUNO DEVE EDITAR AQUI
+%		\textit{``Não vos amoldeis às estruturas deste mundo, \\
+%		mas transformai-vos pela renovação da mente, \\
+%		a fim de distinguir qual é a vontade de Deus: \\
+%		o que é bom, o que Lhe é agradável, o que é perfeito.\\
+%		(Bíblia Sagrada, Romanos 12, 2)}
+%	\end{flushright}
+%\end{epigrafe}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ALUNO DEVE EDITAR AQUI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% resumo em português
+\setlength{\absparsep}{18pt}   % O ALUNO DEVE EDITAR AQUI
+\begin{resumo}
+Tenho que fazer um resumo aqui.
+ \textbf{Palavras-chaves}:ENEM % O ALUNO DEVE EDITAR AQUI
+\end{resumo}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ALUNO DEVE EDITAR AQUI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% resumo em inglês
+%\begin{resumo}[Abstract]
+% \begin{otherlanguage*}{english}
+%   This is the english abstract.     % O ALUNO DEVE EDITAR AQUI
+%
+%   \vspace{\onelineskip}
+% 
+%   \noindent 
+%   \textbf{Key-words}: latex. abntex. text editoration.    % O ALUNO DEVE EDITAR AQUI
+% \end{otherlanguage*}
+%\end{resumo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ALUNO DEVE EDITAR AQUI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% resumo em francês 
+%\begin{resumo}[Résumé]
+% \begin{otherlanguage*}{french}
+%    Il s'agit d'un résumé en français.   % O ALUNO DEVE EDITAR AQUI
+% 
+%   \textbf{Mots-clés}: latex. abntex. publication de textes.   % O ALUNO DEVE EDITAR AQUI
+% \end{otherlanguage*}
+%\end{resumo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ALUNO DEVE EDITAR AQUI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% resumo em espanhol
+%\begin{resumo}[Resumen]
+% \begin{otherlanguage*}{spanish}
+%   Este es el resumen en español.    % O ALUNO DEVE EDITAR AQUI
+%  
+%   \textbf{Palabras clave}: latex. abntex. publicación de textos.  % O ALUNO DEVE EDITAR AQUI
+% \end{otherlanguage*}
+%\end{resumo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% ALUNO NÃO DEVE EDITAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+% ---
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ALUNO DEVE EDITAR AQUI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{siglas}   % O ALUNO DEVE EDITAR AQUI
+\item[INEP]Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira
+\item[ANDE]Associação Nacional de Educação
+\item[ANPEd]Associação Nacional de Pós-Graduação e Pesquisa em Educação
+\item[CEDES]Centro de Estudos Educação e Sociedade
+\item[CPB]Confederação de Professores do Brasil
+\item[CNTE]Confederação Nacional dos Trabalhadores da Educação
+\item[ENEM]Exame Nacional do Ensino Médio
+\item[SISU]Sistema de Seleção Unificada
+\item[SAEB]Sistema de Avaliação da Educação Básica
+\end{siglas}
+% ---
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ALUNO DEVE EDITAR AQUI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{simbolos}   % O ALUNO DEVE EDITAR AQUI
+  \item[$ \Gamma $] Letra grega Gama
+  \item[$ \Lambda $] Lambda
+  \item[$ \zeta $] Letra grega minúscula zeta
+  \item[$ \in $] Pertence
+\end{simbolos}
+% ---
+%%%%%%%%%%%%%%%%%%%%%%%%%%% ALUNO NÃO DEVE EDITAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+% ---
+\textual
+%
+\include{ence1-introducao}  
+%
+\include{ence2-revisao-bibliografica}
+%
+\include{ence3-base-dados}
+%
+\include{ence4-modelagem-estatistica}
+%
+\include{ence5-metodologia}
+% 
+\include{ence6-analise-resultados}
+%
+\bookmarksetup{startatroot}% 
+% 
+\include{ence7-conclusao}
+%
+\postextual
+%
+\bibliography{pacoteence-modelos-references}
+%
+% ----------------------------------------------------------
+% Glossário
+% ----------------------------------------------------------
+%Capítulo excluído
+% Consulte o manual da classe abntex2 para orientações sobre o glossário.
+%
+%\glossary
+% ---
+%\begin{apendicesenv}
+%%
+%\partapendices
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ALUNO DEVE EDITAR AQUI APENDICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ----------------------------------------------------------
+%\chapter{Capitulo}
+%% ----------------------------------------------------------
+%\chapter{Caplitulo 2}
+%% ----------------------------------------------------------
+%\end{apendicesenv}
+%% 
+%\begin{anexosenv}
+%%
+%\partanexos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ALUNO DEVE EDITAR AQUI ANEXOS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter{Capitulo}
+%% ---
+%\chapter{Capitulo}
+%%
+%\chapter{Capitulo}
+%% 
+%\end{anexosenv}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NÃO EDITAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%---------------------------------------------------------------------
+% INDICE REMISSIVO
+%---------------------------------------------------------------------
+\printindex
+%
+\end{document}
