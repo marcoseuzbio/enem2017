@@ -1,7 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%% DESCRIÇÃO DOS DADOS %%%%%%%%%%%%%%%%%%%
 \chapter[BASE DE DADOS]{BASE DE DADOS} % CAIXA ALTA
+
 Nesta seção, apresentam-se a descrição das fontes de dados e o tratamento aplicado à base obtida.
+
 \section{Descrição das fontes de dados}
+
 As bases de dados utilizadas foram os microdados do ENEM e os microdados do censo escolar, disponibilizados pelo Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP),sendo o primeiro por intermédio da Diretoria de Avaliação da Educação Básica, afim de atender a demanda por informações sobre a prova. Foi tomado 2017 como ano de referência, pois até o inicio deste trabalho ainda não havia sido disponibilizado os dados referentes ao ENEM 2018.
 Dos microdados do enem foram selecionadas as variáveis:
 \begin{itemize}
@@ -9,46 +12,47 @@ Dos microdados do enem foram selecionadas as variáveis:
 	\item TP\_SEXO - sexo do aluno (masculino; feminino);
 	\item TP\_ESTADO\_CIVIL - estado civil do aluno (Solteiro(a); Casado(a)/Mora com companheiro(a); Divorciado(a)/Desquitado(a)/Separado(a);  Viúvo(a));
 	\item TP\_COR\_RACA - cor ou raça do aluno (Não declarado; Branca; Preta; Parda; Amarela; Indígena);
-	\item TP\_ST\_CONCLUSAO - Situação de conclusão do Ensino Médio (Já concluí o Ensino Médio; Estou cursando e concluirei o Ensino Médio em 201;Estou cursando e concluirei o Ensino Médio após 2017; Não concluí e não estou cursando o Ensino Médio);
-	\item CO\_ESCOLA -  Número gerado como identificador da escola no Censo Escolar da Educação Básica;
-	\item NU\_NOTA\_MT - Nota da prova de Matemática;
-	\item Q001 - Até que série o pai, ou o homem responsável por pelo aluno, estudou (Nunca estudou; Não completou a 4ª série/5º ano do Ensino Fundamental; Completou a 4ª série/5º ano, mas não completou a 8ª série/9º ano do Ensino Fundamental; Completou a 8ª série/9º ano do Ensino Fundamental, mas não completou o Ensino Médio; Completou o Ensino Médio, mas não completou a Faculdade;Completou a Faculdade, mas não completou a Pós-graduação;Completou a Pós-graduação;Não sei);
-	\item Q002 - Até que série a mãe, ou a mulher responsável por pelo aluno, estudou (Nunca estudou; Não completou a 4ª série/5º ano do Ensino Fundamental; Completou a 4ª série/5º ano, mas não completou a 8ª série/9º ano do Ensino Fundamental; Completou a 8ª série/9º ano do Ensino Fundamental, mas não completou o Ensino Médio; Completou o Ensino Médio, mas não completou a Faculdade;Completou a Faculdade, mas não completou a Pós-graduação;Completou a Pós-graduação;Não sei);
-	\item Q008 - Na residência tem banheiro( Não; Sim, um; Sim, dois; Sim, três;Sim, quatro ou mais);
-	\item Q025 - Na residência tem acesso à Internet (Não; Sim);
-\end{itemize}
-No microdados do censo escolar, foram selecionadas as variáveis:
-\begin{itemize}
-	\item CO\_MUNICIPIO - Código do Município;
-	\item CO\_DISTRITO - Código completo do Distrito da escola;
-	\item TP\_LOCALIZACAO - Localização (Urbana; Rural);
-	\item IN\_AGUA\_FILTRADA - Água consumida pelos alunos na escola passa por um processo de filtragem (Não filtrada; Filtrada);
-	\item IN\_AGUA\_REDE\_PUBLICA - Abastecimento de água através de rede pública;
-	\item IN\_AGUA\_POCO\_ARTESIANO - Abastecimento de água através de poço artesiano;
-	\item IN\_AGUA\_CACIMBA - Abastecimento de água através de cacimba/Cisterna/Poço;
-	\item IN\_AGUA\_FONTE\_RIO - Abastecimento de água através de Fonte/Rio/Igarapé/Riacho/Córrego;
-	\item IN\_AGUA\_INEXISTENTE - Abastecimento de água inexistente;
-	\item IN\_BIBLIOTECA\_SALA\_LEITURA - Existe biblioteca ou sala de leitura nas dependências da escola;
-	\item IN\_BANHEIRO\_FORA\_PREDIO - O banheiro se encontra fora da escola;
-	\item IN\_BANHEIRO\_DENTRO\_PREDIO - O banheiro se encontra dentro do prédio;
-	\item IN\_LIXO\_COLETA\_PERIODICA - Lixo é coletado periodicamente;
-	\item IN\_LIXO\_RECICLA - O lixo é reciclado;
-	\item IN\_BANHEIRO\_PNE - Banheiro das dependências da escola adequado ao uso dos alunos com deficiência ou mobilidade reduzida;
-	\item IN\_SECRETARIA - Dependências existentes na escola sala de secretaria;
-	\item IN\_ENERGIA\_INEXISTENTE - Abastecimento de energia elétrica inexistente;
-	\item IN\_INTERNET - Acesso à Internet;
-	\item IN\_BANDA\_LARGA - Internet Banda Larga;
-	\item IN\_QUADRA\_ESPORTES\_COBERTA - Dependências existentes na escol, quadra de esportes Coberta;
-	\item NU\_EQUIP\_TV - Quantidade de Aparelhos de televisão;
-	\item NU\_EQUIP\_DVD - Quantidade de Aparelhos de DVD;
-	\item IN\_SALA\_PROFESSOR - Dependências existentes na escola sala de professores;
-	\item IN\_EQUIP\_COPIADORA - Equipamentos existentes na escola copiadora;
-	\item IN\_LABORATORIO\_INFORMATICA - Dependências existentes na escola laboratório de informática;
-	\item IN\_LABORATORIO\_CIENCIAS - Dependências existentes na escola laboratório de ciências;
-	\item IN\_EQUIP\_IMPRESSORA - Equipamentos existentes na escola impressora;
-	\item IN\_COMPUTADOR - Equipamentos existentes na escola computador;
-	\item TP\_AEE - Atendimento Educacional Especializado (AEE);
-	\item IN\_BIBLIOTECA -  Dependências existentes na escola biblioteca;
-	\item IN\_PATIO\_COBERTO - Dependências existentes na escola pátio Coberto;
-\end{itemize}
+		\item TP\_ST\_CONCLUSAO - Situação de conclusão do Ensino Médio (Já concluí o Ensino Médio; Estou cursando e concluirei o Ensino Médio em 201;Estou cursando e concluirei o Ensino Médio após 2017; Não concluí e não estou cursando o Ensino Médio);
+		\item CO\_ESCOLA -  Número gerado como identificador da escola no Censo Escolar da Educação Básica;
+		\item NU\_NOTA\_MT - Nota da prova de Matemática;
+		\item Q001 - Até que série o pai, ou o homem responsável por pelo aluno, estudou (Nunca estudou; Não completou a 4ª série/5º ano do Ensino Fundamental; Completou a 4ª série/5º ano, mas não completou a 8ª série/9º ano do Ensino Fundamental; Completou a 8ª série/9º ano do Ensino Fundamental, mas não completou o Ensino Médio; Completou o Ensino Médio, mas não completou a Faculdade;Completou a Faculdade, mas não completou a Pós-graduação;Completou a Pós-graduação;Não sei);
+		\item Q002 - Até que série a mãe, ou a mulher responsável por pelo aluno, estudou (Nunca estudou; Não completou a 4ª série/5º ano do Ensino Fundamental; Completou a 4ª série/5º ano, mas não completou a 8ª série/9º ano do Ensino Fundamental; Completou a 8ª série/9º ano do Ensino Fundamental, mas não completou o Ensino Médio; Completou o Ensino Médio, mas não completou a Faculdade;Completou a Faculdade, mas não completou a Pós-graduação;Completou a Pós-graduação;Não sei);
+		\item Q008 - Na residência tem banheiro( Não; Sim, um; Sim, dois; Sim, três;Sim, quatro ou mais);
+		\item Q025 - Na residência tem acesso à Internet (Não; Sim);
+	\end{itemize}
+	No microdados do censo escolar, foram selecionadas as variáveis:
+	\begin{itemize}
+		\item CO\_MUNICIPIO - Código do Município;
+		\item CO\_DISTRITO - Código completo do Distrito da escola;
+		\item TP\_LOCALIZACAO - Localização (Urbana; Rural);
+		\item IN\_AGUA\_FILTRADA - Água consumida pelos alunos na escola passa por um processo de filtragem (Não filtrada; Filtrada);
+		\item IN\_AGUA\_REDE\_PUBLICA - Abastecimento de água através de rede pública;
+		\item IN\_AGUA\_POCO\_ARTESIANO - Abastecimento de água através de poço artesiano;
+		\item IN\_AGUA\_CACIMBA - Abastecimento de água através de cacimba/Cisterna/Poço;
+		\item IN\_AGUA\_FONTE\_RIO - Abastecimento de água através de Fonte/Rio/Igarapé/Riacho/Córrego;
+		\item IN\_AGUA\_INEXISTENTE - Abastecimento de água inexistente;
+		\item IN\_BIBLIOTECA\_SALA\_LEITURA - Existe biblioteca ou sala de leitura nas dependências da escola;
+		\item IN\_BANHEIRO\_FORA\_PREDIO - O banheiro se encontra fora da escola;
+		\item IN\_BANHEIRO\_DENTRO\_PREDIO - O banheiro se encontra dentro do prédio;
+		\item IN\_LIXO\_COLETA\_PERIODICA - Lixo é coletado periodicamente;
+		\item IN\_LIXO\_RECICLA - O lixo é reciclado;
+		\item IN\_BANHEIRO\_PNE - Banheiro das dependências da escola adequado ao uso dos alunos com deficiência ou mobilidade reduzida;
+		\item IN\_SECRETARIA - Dependências existentes na escola sala de secretaria;
+		\item IN\_ENERGIA\_INEXISTENTE - Abastecimento de energia elétrica inexistente;
+		\item IN\_INTERNET - Acesso à Internet;
+		\item IN\_BANDA\_LARGA - Internet Banda Larga;
+		\item IN\_QUADRA\_ESPORTES\_COBERTA - Dependências existentes na escol, quadra de esportes Coberta;
+		\item NU\_EQUIP\_TV - Quantidade de Aparelhos de televisão;
+		\item NU\_EQUIP\_DVD - Quantidade de Aparelhos de DVD;
+		\item IN\_SALA\_PROFESSOR - Dependências existentes na escola sala de professores;
+		\item IN\_EQUIP\_COPIADORA - Equipamentos existentes na escola copiadora;
+		\item IN\_LABORATORIO\_INFORMATICA - Dependências existentes na escola laboratório de informática;
+		\item IN\_LABORATORIO\_CIENCIAS - Dependências existentes na escola laboratório de ciências;
+		\item IN\_EQUIP\_IMPRESSORA - Equipamentos existentes na escola impressora;
+		\item IN\_COMPUTADOR - Equipamentos existentes na escola computador;
+		\item TP\_AEE - Atendimento Educacional Especializado (AEE);
+		\item IN\_BIBLIOTECA -  Dependências existentes na escola biblioteca;
+		\item IN\_PATIO\_COBERTO - Dependências existentes na escola pátio Coberto;
+	\end{itemize}
+	As variáveis de segundo nível foram escolhidas seguindo a proposta de \citeonline{thiago}
 \section{Tratamento das bases de dados}
