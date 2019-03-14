@@ -1,9 +1,9 @@
-	%%%%%%%%%%%%%%%%%%%%%%% REVISÃO BIBLIOGRAFICA %%%%%%%%%%%%%%%%%%%%%%%% 
-	\chapter{REVISÃO BIBLIOGRÁFICA}
+%%%%%%%%%%%%%%%%%%%%%%% REVISÃO BIBLIOGRÁFICA %%%%%%%%%%%%%%%%%%%%%%%% 
+\chapter{REVISÃO BIBLIOGRÁFICA}
 
 	Neste capitulo, busca-se contextualizar o ENEM tanto como avaliação do desempenho individual do aluno, bem como ferramenta pedagógica, visto o desenvolvimento educacional brasileiro ao longo da história bem como a própria proposta da prova.
 
-	\section{Sobre história da educação}
+\section{Sobre história da educação}
 
 	A educação no Brasil se inicia com a chegada dos jesuítas como primeiros educadores, a partir de 1549. \citeonline{saviani2007historia} define esse como o primeiro período educacional no Brasil, marcado pelos princípios colonizador e catequizador, com ênfase nos povos indígenas. Neste período, os colonizadores ao tentar escravizar indígenas, foram confrontados pelos jesuítas.
 
@@ -68,3 +68,50 @@
 	Começam separando os alunos em níveis socioeconômicos através da análise fatorial completa, onde permite separar as questões socioeconômicas em 3 fatores(que coincidiram com os propostos por Bourdieu) e usar o peso destes fatores para representar os estados, dentre os quais foi utilizado o correspondente ao capital cultural institucionalizado, pois está mais correlacionado com a nota. A partir de tais variáveis, foi utilizada a análise de cluster para se construir níveis socioeconômicos através do método de K-means bivariada.
 
 	Para analisar a dificuldade da questão, os autores usam um modelo logístico de 3 variáveis, para determinar a dificuldade da questão.
+
+\citeonline{thiago} propôs uma modelagem hierárquica, como de verificar quais variáveis socioeconômicas influenciaram os estudantes no ENEM de 2014 no estado do Rio de Janeiro. Ele afirma que o desempenho do aluno apresenta relação com a infraestrutura escolar. Seu modelo considera o aluno como variáveis de primeiro nível e a escola como variáveis de segundo nível, apoiando-se na proposta de \citeonline{neto}.
+As variáveis selecionadas foram:
+\begin{itemize}
+\item A diferença entre a renda per capita estimada do aluno pela renda média da escola.
+\item Variável indicando se o pai ou a mãe possuam pós-graduação ou não.
+\item Variável indicando se o pai ou a mãe possuem como grau de instrução máximo graduação completa/incompleta ou não.
+\item Variável indicadora se o pai ou a mãe possuem como grau de instrução máximo ensino médio completo.
+\item Variável indicando se o aluno trabalhava na época em que fez a prova.
+\item Variável indicadora se o aluno seja do gênero masculino.
+\item Escore de infraestrutura da escola que o aluno estudava quando fez a prova do ENEM. Para calcular este escore, o autor gerou um modelo TRI com as variáveis:
+\begin{itemize}
+\item Água Filtrada para os alunos.
+\item Banheiro dentro do prédio.
+\item Água - Rede pública.
+\item Água - Rede pública ou poço artesiano.
+\item Água - Rede pública ou Poço artesiano ou Cacimba.
+\item Água Rede pública ou Poço artesiano ou Cacimba ou Fonte/rio.
+\item Energia Elétrica.
+\item Esgoto Sanitário.
+\item Lixo - Coleta Periódica.
+\item Lixo - Coleta Periódica de Lixo ou Reciclagem.
+\item Sala da Diretoria.
+\item Sala dos Professores.
+\item Laboratório de Informática.
+\item Laboratório de Ciências.
+\item Sala de Atendimento Especial (AEE).
+\item Biblioteca.
+\item Banheiro dentro ou fora do prédio.
+\item Banheiro adequado a alunos com deficiência ou mobilidade reduzida.
+\item Dependências PNE.
+\item Secretaria.
+\item Acesso à internet.
+\item Acesso à internet banda larga.
+\item Quadra de esportes coberto ou descoberto.
+\item Pelo menos uma TV.
+\item Pelo menos um DVD.
+\item Pelo menos uma copiadora.
+\item Pelo menos uma impressora.
+\item Pelo menos um computador para os alunos.
+\item Computadores suficientes.
+\item Pátio coberto ou descoberto.
+\end{itemize}
+\item Variáveis indicadoras se as escolas que os alunos estudaram fossem de dependência administrativa federal, privada ou municipal.
+\item Renda média dos alunos na escola.
+\end{itemize}
+
